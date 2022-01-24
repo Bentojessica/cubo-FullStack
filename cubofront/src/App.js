@@ -1,10 +1,10 @@
-import Home from "./Page/Home/Home"
+import { Router } from "./Router/Router"
 import GlobalState from "./contexts/Global/GlobalState"
 function App() {
   return (
     <div>
       <GlobalState>
-      <Home/>
+      <Router/>
       </GlobalState>
     </div>
   );

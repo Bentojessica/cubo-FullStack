@@ -1,9 +1,13 @@
  import axios from "axios"
  import { useForm }  from "../../hooks/userForm"
  import { ContainerHeader, Input, Button, Form } from "./styled"
- 
+ import { BASE_URL } from "../../contants/url"
+ import { useContext } from "react"
+ import { GlobalContext } from "../../contexts/Global/GlobalContext"
 
  const Header = () => {
+    const { request } = useContext(GlobalContext)
+
     const initialForm = {
         firstName: "",
         lasttName: "",
@@ -22,13 +26,17 @@
             participation: Number(participation)
         }
 
-        axios.post(`https://cubobackend.herokuapp.com/user/create`, body)
+        axios.post(`${BASE_URL}/user/create`, body)
         .then((res) => {
             clear()
-            alert(res.data.message)
+            request.requestUser()
         }).catch((error) =>{
-            alert("Unexpected error, try again")
+            alert("Erro inesperado, tente novamente.")
         })
+    }
+
+    const onlyNumber = (text) => {
+        return text.replace(/[^0-9]/g, '');
     }
 
     return <ContainerHeader onSubmit={sendUser}>
@@ -45,7 +53,7 @@
         <Input name="participation"
             placeholder="Participation"
             value={form.participation}
-            onChange={onChange}
+            onChange={(e) => onChange(e, onlyNumber)}
         />
         <Button type="submit">
             Send

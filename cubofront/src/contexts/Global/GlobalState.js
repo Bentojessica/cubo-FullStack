@@ -1,9 +1,10 @@
 import { useRequestData } from "../../hooks/useRequestData"
 import { GlobalContext } from "./GlobalContext"
+import { BASE_URL } from "../../contants/url"
 
 const GlobalState = ({ children }) => {
     const [users, requestUser] =
-        useRequestData([], "https://cubobackend.herokuapp.com/user/all")
+        useRequestData([], `${BASE_URL}/user/all`)
 
     const states = { users }
     const request = { requestUser }

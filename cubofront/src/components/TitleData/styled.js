@@ -8,12 +8,12 @@ export const ContainerTitleData = styled.section`
     text-align: center;
     padding: 2.5rem 1rem 2rem 1rem;
     color: rgb(90, 90, 90);
-    h1{
+    h1 {
        text-transform: uppercase;
         font-size: 2rem;
         margin-bottom: 1rem;
     }
-    h2{
+    h2 {
         font-weight: 500;
         color: rgb(20, 90, 100);
     }

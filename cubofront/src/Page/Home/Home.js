@@ -2,6 +2,7 @@ import  Header  from "../../components/Header/Header"
 import  TableData  from "../../components/TableData/TableData"
 import  TitleData  from "../../components/TitleData/TitleData"
 import { SectionData } from "./styled"
+import { ChartPieData } from "../../components/ChartPieData/ChartPieData"
 
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
         <TitleData/>
         <SectionData>
             <TableData/>
+            <ChartPieData/>
         </SectionData>
         </div>
     

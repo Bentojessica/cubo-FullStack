@@ -10,7 +10,7 @@ export const useRequestData = (initialState, url, config = {}) => {
                 setData(res.data)
             })
             .catch(err => {
-                alert("Unexpected error, try again")
+                alert("Erro inesperado, tente novamente.")
             })
     }
 
