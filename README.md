@@ -25,7 +25,7 @@ The layout has a form, a table with percentage information of participation and 
 
 ### Por onde começar
 
-Primeiramente, você pode fazer um FORK do repositório original >>Aqui<<, para sua conta do Github, depois disso crie uma branch nova com o seu nome (ex: nome_sobrenome), para podermos indentificá-lo.
+Primeiramente, você pode fazer um FORK do repositório original >>[Aqui](https://github.com/Bentojessica/cubo-FullStack)<<, para sua conta do Github, depois disso crie uma branch nova com o seu nome (ex: nome_sobrenome), para podermos indentificá-lo.
 
 Após terminar o desafio, você pode solicitar um pull request para a branch master do nosso repositório. Vamos receber e fazer a avaliação de todos.
 
