@@ -1,8 +1,21 @@
+*[Documentação](https://documenter.getpostman.com/view/17589376/UVXonaBf)*
+**OBS: O link do surge não está disponivel para testar utilize o http://localhost:3003/**
+
+*[Surge](https://dependent-manager.surge.sh/)*
+
 ![image](https://user-images.githubusercontent.com/84422472/189124579-f43150c9-e2be-4bd1-b0da-8e9abe3a70b7.png)
 
-Enunciado do case
+## Linguagens e ferramentas utilizadas:
+JAVASCRIPT
+TYPESCRIPT
+NODE.JS
+MYSQL
+REACT.JS
+MATERIAL-UI
 
-# { "developer": "fullstack" }
+*Enunciado do case*
+
+## { "developer": "fullstack" }
 
 ### Front-end
 
@@ -25,15 +38,24 @@ The layout has a form, a table with percentage information of participation and 
 
 ### Por onde começar
 
-Primeiramente, você pode fazer um FORK do repositório original >>[Aqui](https://github.com/Bentojessica/cubo-FullStack)<<, para sua conta do Github, depois disso crie uma branch nova com o seu nome (ex: nome_sobrenome), para podermos indentificá-lo.
+Instruções para usar o case localmente:
+No terminal, executar os segintes comandos:
 
-Após terminar o desafio, você pode solicitar um pull request para a branch master do nosso repositório. Vamos receber e fazer a avaliação de todos.
+git clone https://github.com/Bentojessica/cubo-FullStack
 
-Depois no terminal do vscode roda o comando **npm install** e depois roda o comando **npm start** tanto na pasta front quando na pasta back
+Para rodar o servidor (back end) Crie um arquivo .env e adicione as variáveis de ambiente assim:
 
-*[Documentação](https://documenter.getpostman.com/view/17589376/UVXonaBf)*
+DB_HOST =
 
-*[Surge](https://dependent-manager.surge.sh/)*
+DB_USER =
 
+DB_PASSWORD =
 
+DB_SCHEMA =
 
+No backend roda o comando:
+npm install
+
+e
+
+npm run dev
